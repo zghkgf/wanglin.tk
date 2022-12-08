@@ -1,0 +1,124 @@
+<DOCTYPE html!>
+ <head>
+ 
+   
+<style>@charset "utf-8";
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: '微软雅黑', '宋体', sans-serif;
+    overflow: hidden;
+    background: url("images/bg.jpg")center top #f4f4f4;
+}
+
+#bgc {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mb-box {
+    width: 416px;
+    height: auto;
+    padding: 15px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    margin-left: -208px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.bb {
+    margin: 0 auto;
+    width: 416px;
+    max-height: 560px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #999;
+    overflow: hidden;
+}
+
+.bb h2 {
+    margin: 15px auto 0px;
+    padding: 20px 0px 10px;
+    width: 280px;
+    font-size: 18px;
+    text-align: center;
+    color: #883a78;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bb_text {
+    height: auto;
+    min-height: 180px;
+    max-height: 300px;
+    padding: 20px 40px;
+    text-indent: 2em;
+    line-height: 28px;
+    font-size: 16px;
+    color: #303030;
+    overflow: auto;
+}
+
+.bb_myname {
+    text-align: right;
+    padding: 0px 40px 20px;
+    line-height: 30px;
+    color: #883a78;
+}
+
+.mb-x {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 260px;
+}
+</style>
+</head>
+ <body>
+    <div class="mb-box">
+        <div class="bb">
+            <h2>亲爱的林悦：</h2>
+            <div class="bb_text">
+                <div id="code">
+                    有人说爱情可以让人失去生命，但我不会。
+                    我要留着这条命为你擦去嘴角的面渣；我要留着这条命去买你喜欢的玫瑰花；
+                    我要留着这条命拂去你眼角的泪水；我要留着这条命去撑起你的快乐天堂；
+                    如果有一天你找到了心中的他，我会爬上山崖，为你去摘那朵你心中的花！
+                    我想和你一起过平淡的生活......清晨可以看到你的笑脸和餐桌上的牛奶煎蛋，
+                    然后一起出门，很努力地工作，下班去超市买菜，一起回家做晚饭，
+                    夕阳下牵手散步......一直到老！</div>
+            </div>
+            <p class="bb_myname">
+                爱你的王迅<br/>
+            </p>
+    <script>
+        Element.prototype.typewriter = function(a) {
+            var d = this,
+                c = d.innerHTML,
+                b = 0;
+            d.innerHTML = "";
+            var e = setInterval(function() {
+                var f = c.substr(b, 1);
+                if (f == "<") {
+                    b = c.indexOf(">", b) + 1
+                } else {
+                    b++
+                }
+                d.innerHTML = c.substring(0, b) + (b & 1 ? "_" : "");
+                if (b >= c.length) {
+                    clearInterval(e)
+                }
+            }, 150)
+            return this
+
+        }
+        document.getElementById("code").typewriter();
+    </script>
+
+        </div>
+    </div>
+
+</body>
